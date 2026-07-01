@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Risoluzione DNS di un Service: il pod interroga CoreDNS che restituisce il ClusterIP, poi il pod si connette al VIP">
+  <style>
+    .bg{fill:#ffffff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-weight:400;font-size:12px}
+    @media (prefers-color-scheme: dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}
+  </style>
+  <defs><marker id="ad" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect class="bg" x="1" y="1" width="678" height="248" rx="12"/>
+
+  <rect x="40" y="105" width="150" height="76" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.6"/>
+  <text class="t" x="115" y="136" text-anchor="middle" fill="#2C2C2A">pod: app</text>
+  <text class="ts" x="115" y="156" text-anchor="middle" fill="#5F5E5A">vuole "web.shop"</text>
+
+  <rect x="275" y="40" width="185" height="64" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.6"/>
+  <text class="t" x="367" y="68" text-anchor="middle" fill="#0C447C">CoreDNS</text>
+  <text class="ts" x="367" y="88" text-anchor="middle" fill="#185FA5">namespace openshift-dns</text>
+
+  <rect x="520" y="105" width="130" height="76" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
+  <text class="t" x="585" y="136" text-anchor="middle" fill="#085041">Service web</text>
+  <text class="ts" x="585" y="156" text-anchor="middle" fill="#0F6E56">172.30.12.5</text>
+
+  <line x1="180" y1="120" x2="290" y2="98" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#ad)"/>
+  <text class="ts" x="228" y="104" text-anchor="middle">1. query FQDN</text>
+  <line x1="290" y1="104" x2="180" y2="150" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#ad)"/>
+  <text class="ts" x="232" y="168" text-anchor="middle">2. risposta: 172.30.12.5</text>
+  <line x1="190" y1="170" x2="518" y2="170" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#ad)"/>
+  <text class="ts" x="360" y="162" text-anchor="middle">3. connessione al ClusterIP (VIP)</text>
+
+  <text class="ts" x="340" y="228" text-anchor="middle">CoreDNS risolve il nome del Service nel suo ClusterIP; poi il pod parla col VIP.</text>
+</svg>

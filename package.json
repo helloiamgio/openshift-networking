@@ -1,0 +1,21 @@
+{
+  "name": "openshift-networking",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "OpenShift 4.18 networking: modello OVN-Kubernetes, pod network, CIDR, Multus e User-Defined Networks (UDN).",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "wrangler pages deploy dist --project-name=openshift-networking"
+  },
+  "dependencies": {
+    "astro": "^7.0.4",
+    "@astrojs/starlight": "^0.41.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

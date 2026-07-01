@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="MetalLB in modalita' Layer2, dove un solo nodo possiede il VIP e risponde all'ARP con failover, contro modalita' BGP, dove tutti i nodi annunciano il VIP e il traffico e' distribuito in ECMP">
+  <style>
+    .bg{fill:#ffffff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-weight:400;font-size:12px}
+    @media (prefers-color-scheme: dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}
+  </style>
+  <defs><marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect class="bg" x="1" y="1" width="678" height="318" rx="12"/>
+
+  <text class="t" x="175" y="32" text-anchor="middle">Layer2 — un nodo possiede il VIP</text>
+  <rect x="30" y="46" width="290" height="252" rx="10" fill="none" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <rect x="95" y="62" width="160" height="38" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="ts" x="175" y="85" text-anchor="middle" fill="#2C2C2A">client / LAN</text>
+  <rect x="95" y="120" width="160" height="26" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="ts" x="175" y="137" text-anchor="middle" fill="#633806">VIP 192.168.10.100</text>
+  <rect x="50" y="174" width="115" height="70" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="107" y="203" text-anchor="middle" fill="#0C447C">node-1</text><text class="ts" x="107" y="222" text-anchor="middle" fill="#185FA5">attivo · ARP</text>
+  <rect x="185" y="174" width="115" height="70" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="t" x="242" y="203" text-anchor="middle" fill="#2C2C2A">node-2</text><text class="ts" x="242" y="222" text-anchor="middle" fill="#5F5E5A">standby</text>
+  <line x1="175" y1="100" x2="175" y2="118" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#am)"/>
+  <line x1="160" y1="146" x2="115" y2="172" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#am)"/>
+  <line x1="165" y1="209" x2="184" y2="209" stroke="#8a8f99" stroke-width="1.2" stroke-dasharray="3 3" marker-end="url(#am)"/>
+  <text class="ts" x="175" y="272" text-anchor="middle">un nodo risponde all'ARP · failover</text>
+
+  <text class="t" x="505" y="32" text-anchor="middle">BGP — tutti annunciano il VIP</text>
+  <rect x="360" y="46" width="290" height="252" rx="10" fill="none" stroke="#185FA5" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <rect x="425" y="62" width="160" height="38" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="ts" x="505" y="85" text-anchor="middle" fill="#3C3489">router BGP</text>
+  <rect x="380" y="174" width="115" height="70" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="437" y="203" text-anchor="middle" fill="#0C447C">node-1</text><text class="ts" x="437" y="222" text-anchor="middle" fill="#185FA5">annuncia VIP</text>
+  <rect x="515" y="174" width="115" height="70" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="572" y="203" text-anchor="middle" fill="#0C447C">node-2</text><text class="ts" x="572" y="222" text-anchor="middle" fill="#185FA5">annuncia VIP</text>
+  <line x1="480" y1="100" x2="440" y2="172" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#am)"/>
+  <line x1="530" y1="100" x2="570" y2="172" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#am)"/>
+  <text class="ts" x="505" y="130" text-anchor="middle">ECMP</text>
+  <text class="ts" x="505" y="272" text-anchor="middle">traffico distribuito su piu' nodi</text>
+</svg>

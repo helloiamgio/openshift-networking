@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Multus: un pod con interfaccia primaria eth0 sulla pod network e interfaccia secondaria net1 verso una VLAN fisica">
+  <style>
+    .bg{fill:#ffffff;stroke:#e5e7eb}
+    .t{fill:#1f2430;font-weight:600;font-size:14px}
+    .ts{fill:#555a66;font-weight:400;font-size:12px}
+    @media (prefers-color-scheme: dark){
+      .bg{fill:#1b2030;stroke:#33384a}
+      .t{fill:#e8eaf0}.ts{fill:#a7adbd}
+    }
+  </style>
+  <defs>
+    <marker id="a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect class="bg" x="1" y="1" width="678" height="318" rx="12"/>
+
+  <rect x="40" y="110" width="170" height="100" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.6"/>
+  <text class="t" x="125" y="150" text-anchor="middle" fill="#2C2C2A">pod</text>
+  <text class="ts" x="125" y="170" text-anchor="middle" fill="#5F5E5A">namespace tenant-x</text>
+  <circle cx="208" cy="140" r="4" fill="#185FA5"/>
+  <text class="ts" x="196" y="128" text-anchor="end">eth0</text>
+  <circle cx="208" cy="180" r="4" fill="#854F0B"/>
+  <text class="ts" x="196" y="196" text-anchor="end">net1</text>
+
+  <line x1="212" y1="140" x2="378" y2="80" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#a3)"/>
+  <line x1="212" y1="180" x2="378" y2="240" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#a3)"/>
+
+  <rect x="382" y="48" width="258" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="511" y="72" text-anchor="middle" fill="#0C447C">default network — OVN-K</text>
+  <text class="ts" x="511" y="92" text-anchor="middle" fill="#185FA5">primaria · 10.128.x.x · Service/DNS</text>
+
+  <rect x="382" y="208" width="258" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="t" x="511" y="232" text-anchor="middle" fill="#633806">rete secondaria (Multus)</text>
+  <text class="ts" x="511" y="252" text-anchor="middle" fill="#854F0B">net1 · NAD · bridge/macvlan · VLAN 100</text>
+
+  <text class="ts" x="295" y="100" text-anchor="middle">primaria</text>
+  <text class="ts" x="295" y="222" text-anchor="middle">aggiuntiva</text>
+
+  <text class="t" x="340" y="300" text-anchor="middle">Multus aggiunge interfacce: la primaria resta sulla pod network</text>
+</svg>

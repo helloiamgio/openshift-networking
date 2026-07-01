@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 454" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Mappatura fra i 7 livelli OSI e i 4 livelli del modello TCP/IP con esempi di protocolli">
+  <style>
+    .bg{fill:#ffffff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-weight:400;font-size:12px}
+    @media (prefers-color-scheme: dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}
+  </style>
+  <rect class="bg" x="1" y="1" width="678" height="452" rx="12"/>
+  <text class="t" x="50" y="34">Modello OSI (7 livelli)</text>
+  <text class="t" x="330" y="34">TCP/IP (4 livelli)</text>
+
+  <rect x="50" y="54" width="250" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="64" y="74" fill="#0C447C">L7 Applicazione</text><text class="ts" x="64" y="91" fill="#185FA5">HTTP, DNS, gRPC</text>
+  <rect x="50" y="108" width="250" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="64" y="128" fill="#0C447C">L6 Presentazione</text><text class="ts" x="64" y="145" fill="#185FA5">TLS, encoding</text>
+  <rect x="50" y="162" width="250" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="64" y="182" fill="#0C447C">L5 Sessione</text><text class="ts" x="64" y="199" fill="#185FA5">socket, sessioni</text>
+  <rect x="50" y="216" width="250" height="46" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="t" x="64" y="236" fill="#085041">L4 Trasporto</text><text class="ts" x="64" y="253" fill="#0F6E56">TCP, UDP · porte</text>
+  <rect x="50" y="270" width="250" height="46" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="t" x="64" y="290" fill="#3C3489">L3 Rete</text><text class="ts" x="64" y="307" fill="#534AB7">IP, ICMP · routing</text>
+  <rect x="50" y="324" width="250" height="46" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="t" x="64" y="344" fill="#633806">L2 Data Link</text><text class="ts" x="64" y="361" fill="#854F0B">Ethernet, MAC, ARP, VLAN</text>
+  <rect x="50" y="378" width="250" height="46" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="t" x="64" y="398" fill="#2C2C2A">L1 Fisico</text><text class="ts" x="64" y="415" fill="#5F5E5A">cavi, NIC, segnali</text>
+
+  <rect x="330" y="54" width="300" height="154" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="t" x="344" y="78" fill="#0C447C">Applicazione</text><text class="ts" x="344" y="96" fill="#185FA5">copre L7–L5 OSI</text>
+  <rect x="330" y="216" width="300" height="46" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="t" x="344" y="236" fill="#085041">Trasporto</text><text class="ts" x="344" y="253" fill="#0F6E56">TCP / UDP</text>
+  <rect x="330" y="270" width="300" height="46" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="t" x="344" y="290" fill="#3C3489">Internet</text><text class="ts" x="344" y="307" fill="#534AB7">IP · qui vive l'overlay pod (Geneve)</text>
+  <rect x="330" y="324" width="300" height="100" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text class="t" x="344" y="348" fill="#633806">Accesso rete</text><text class="ts" x="344" y="366" fill="#854F0B">L2+L1 · Ethernet, VLAN, NIC</text>
+</svg>
