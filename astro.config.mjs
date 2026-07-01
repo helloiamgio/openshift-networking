@@ -9,6 +9,7 @@ export default defineConfig({
       title: 'OpenShift Networking',
       description:
         'Networking OpenShift 4.18 dalle fondamenta: concetti di rete, OVN-Kubernetes, servizi, Multus, UDN, localnet e sicurezza.',
+      customCss: ['./src/styles/custom.css'],
       defaultLocale: 'root',
       locales: { root: { label: 'Italiano', lang: 'it' } },
       social: [
@@ -77,6 +78,7 @@ export default defineConfig({
           items: [
             { label: 'localnet: pod/VM su VLAN', slug: 'fisiche/localnet' },
             { label: 'Bridge e NMState', slug: 'fisiche/bridge-nmstate' },
+            { label: 'Nodi/MachineSet su VLAN', slug: 'fisiche/nodi-vlan-machineset' },
             { label: 'SR-IOV', slug: 'fisiche/sriov' },
           ],
         },
