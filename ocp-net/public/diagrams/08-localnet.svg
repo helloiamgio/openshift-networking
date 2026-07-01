@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Topologia localnet: un pod o VM esce da OVN attraverso un bridge mappato su una NIC e finisce direttamente su una VLAN fisica">
+  <style>
+    .bg{fill:#ffffff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-weight:400;font-size:12px}
+    @media (prefers-color-scheme: dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}
+  </style>
+  <defs><marker id="a8" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect class="bg" x="1" y="1" width="678" height="298" rx="12"/>
+  <text class="t" x="40" y="36">Percorso localnet (no overlay: L2 fisico diretto)</text>
+
+  <rect x="30" y="110" width="110" height="70" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.6"/>
+  <text class="t" x="85" y="140" text-anchor="middle" fill="#2C2C2A">pod / VM</text>
+  <text class="ts" x="85" y="158" text-anchor="middle" fill="#5F5E5A">net1</text>
+
+  <rect x="180" y="110" width="130" height="70" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/>
+  <text class="t" x="245" y="138" text-anchor="middle" fill="#085041">OVN localnet</text>
+  <text class="ts" x="245" y="156" text-anchor="middle" fill="#0F6E56">NAD topology</text>
+  <text class="ts" x="245" y="171" text-anchor="middle" fill="#0F6E56">localnet</text>
+
+  <rect x="350" y="110" width="140" height="70" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.6"/>
+  <text class="t" x="420" y="138" text-anchor="middle" fill="#3C3489">br-ex / bridge</text>
+  <text class="ts" x="420" y="156" text-anchor="middle" fill="#534AB7">bridge-mapping</text>
+  <text class="ts" x="420" y="171" text-anchor="middle" fill="#534AB7">NMState (NNCP)</text>
+
+  <rect x="530" y="110" width="120" height="70" rx="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.6"/>
+  <text class="t" x="590" y="138" text-anchor="middle" fill="#633806">NIC · VLAN</text>
+  <text class="ts" x="590" y="156" text-anchor="middle" fill="#854F0B">ens192.100</text>
+  <text class="ts" x="590" y="171" text-anchor="middle" fill="#854F0B">VLAN 100 fisica</text>
+
+  <line x1="140" y1="145" x2="178" y2="145" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#a8)"/>
+  <line x1="310" y1="145" x2="348" y2="145" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#a8)"/>
+  <line x1="490" y1="145" x2="528" y2="145" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#a8)"/>
+
+  <text class="ts" x="340" y="230" text-anchor="middle">Il pod/VM ottiene un IP della subnet fisica e parla in L2 sulla VLAN, come una macchina qualsiasi.</text>
+  <text class="ts" x="340" y="250" text-anchor="middle">Richiede coordinamento con il team rete: la VLAN deve arrivare taggata sulla NIC dei nodi.</text>
+</svg>
