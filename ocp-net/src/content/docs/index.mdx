@@ -1,0 +1,42 @@
+---
+title: OpenShift Networking
+description: Networking OpenShift 4.18 dalle fondamenta — concetti di rete generali, OVN-Kubernetes, servizi, Multus, UDN, localnet e sicurezza.
+template: splash
+hero:
+  tagline: Dai concetti di rete di base fino alla segregazione di un namespace come "cluster nel cluster". Tutto il mondo networking di OpenShift, spiegato da zero.
+  actions:
+    - text: Parti dai concetti di rete
+      link: /reti/osi-tcpip/
+      icon: right-arrow
+      variant: primary
+    - text: Vai alle UDN
+      link: /udn/introduzione/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Reti da zero" icon="open-book">
+    OSI e TCP/IP, L2 vs L3, VLAN, subnet/CIDR, overlay vs underlay. Le basi che reggono tutto il resto.
+  </Card>
+  <Card title="OVN-Kubernetes" icon="puzzle">
+    OVS e OVN, l'architettura del datapath in un nodo, e come un pacchetto attraversa lo stack.
+  </Card>
+  <Card title="Servizi e traffico" icon="random">
+    Service, DNS, Route/Ingress, MetalLB ed egress controllato (EgressIP, EgressFirewall).
+  </Card>
+  <Card title="Multus e UDN" icon="add-document">
+    Reti secondarie con Multus e reti primarie isolate con le User-Defined Networks (GA in 4.18).
+  </Card>
+  <Card title="Reti fisiche" icon="setting">
+    localnet, bridge con NMState e SR-IOV per mettere pod e VM direttamente su una VLAN.
+  </Card>
+  <Card title="Sicurezza" icon="approve-check">
+    NetworkPolicy, AdminNetworkPolicy e micro-segmentazione combinata con le UDN.
+  </Card>
+</CardGrid>
+
+:::note[Contesto]
+Riferimento: OpenShift Container Platform 4.18 (OVN-Kubernetes). Gli esempi presumono un cluster IPI su VMware vSphere, ma i concetti valgono per qualsiasi piattaforma.
+:::
