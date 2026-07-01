@@ -1,46 +1,42 @@
-/* Tema "fluorescent pink" — coerente con redis-ops-course.pages.dev */
+/* Tema "fluorescent pink" — SOLO accento, nessun override degli sfondi.
+   Così il tema chiaro/scuro resta gestito da Starlight e il testo è sempre leggibile. */
 
+/* Tema scuro */
 :root {
-  /* accento rosa fluo (dark) */
-  --sl-color-accent-low: #2a0a1b;
+  --sl-color-accent-low: #3a0f22;
   --sl-color-accent: #ff2e97;
-  --sl-color-accent-high: #ffc6e2;
+  --sl-color-accent-high: #ffd0e6;
   --sl-color-text-accent: #ff5cae;
-
-  /* base scura leggermente più profonda */
-  --sl-color-bg: #161719;
-  --sl-color-bg-nav: #1a1b1e;
-  --sl-color-bg-sidebar: #1a1b1e;
-  --sl-color-hairline-shade: #2a2b30;
 }
 
+/* Tema chiaro */
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffd7ec;
-  --sl-color-accent: #d10c6e;
+  --sl-color-accent: #c40c68;
   --sl-color-accent-high: #5a0530;
   --sl-color-text-accent: #c40c68;
 }
 
-/* Titolo sito in evidenza */
+/* Titolo del sito in evidenza */
 .site-title {
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 
-/* Hero con bagliore rosa */
+/* Hero: solo un bagliore rosa tenue dietro il contenuto, nessun cambio di colore del testo */
 .hero {
   background: radial-gradient(
     55% 80% at 78% 0%,
-    color-mix(in srgb, var(--sl-color-accent) 16%, transparent),
+    color-mix(in srgb, var(--sl-color-accent) 14%, transparent),
     transparent 70%
   );
   border-radius: 1rem;
 }
 
-/* Bottoni azione: alone al passaggio */
-.hero .action.primary {
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--sl-color-accent) 40%, transparent),
-              0 8px 30px -12px color-mix(in srgb, var(--sl-color-accent) 60%, transparent);
+/* Leggibilità garantita del titolo hero in ENTRAMBI i temi
+   (bianco nel tema scuro, quasi-nero nel tema chiaro) */
+.hero h1 {
+  color: var(--sl-color-white);
 }
 
 /* Voce di sidebar attiva in rosa */
@@ -49,13 +45,7 @@
   font-weight: 600;
 }
 
-/* Barra accento sopra le Card della landing */
+/* Barra d'accento sopra le Card della landing */
 .card {
   border-top: 2px solid color-mix(in srgb, var(--sl-color-accent) 55%, transparent);
-}
-
-/* Titoli di sezione con un tocco d'accento */
-.content h2 {
-  border-bottom: 1px solid var(--sl-color-hairline-shade);
-  padding-bottom: 0.2em;
 }
