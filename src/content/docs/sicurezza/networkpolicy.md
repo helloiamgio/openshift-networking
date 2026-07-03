@@ -5,6 +5,8 @@ description: "Micro-segmentazione est-ovest con le NetworkPolicy Kubernetes: def
 
 Le **NetworkPolicy** controllano il traffico **est-ovest** (fra pod) a livello L3/L4. Sono namespaced e funzionano per **selettori**: scegli quali pod regolare e da/verso chi possono comunicare.
 
+![default-deny con allow api→db:5432, api consentito e web bloccato](/diagrams/29-networkpolicy.svg)
+
 ## Il modello additivo
 
 Punto chiave: **finché nessuna policy seleziona un pod, tutto è permesso**. Appena *una* policy lo seleziona per una direzione (Ingress o Egress), quella direzione diventa **deny by default** e passa solo ciò che le policy consentono esplicitamente. Le regole sono additive: non esiste un "deny" esplicito, si nega non permettendo.

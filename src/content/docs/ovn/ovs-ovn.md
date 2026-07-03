@@ -5,6 +5,8 @@ description: Cosa sono Open vSwitch e OVN, e come OVN-Kubernetes li usa per cost
 
 Sotto al networking di OpenShift 4 ci sono due tecnologie: **OVS** e **OVN**. Capirle chiarisce da dove viene tutto il resto.
 
+![Pipeline OVN: da API Kubernetes a NB DB, ovn-northd, SB DB, ovn-controller e flussi OVS](/diagrams/21-ovn-components.svg)
+
 ## Open vSwitch (OVS)
 
 **OVS** è uno switch virtuale software programmabile, che gira su ogni nodo. Inoltra i pacchetti in base a regole di flusso (OpenFlow) invece che a una semplice tabella MAC. È il "ferro" virtuale su cui poggia la rete: i bridge come `br-int` e `br-ex` sono bridge OVS.

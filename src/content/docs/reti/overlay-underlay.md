@@ -5,6 +5,8 @@ description: La differenza fra rete fisica (underlay) e rete virtuale (overlay),
 
 Due parole ricorrono in tutto il networking dei container: **underlay** e **overlay**. Distinguerle chiarisce cosa è "vero" e cosa è "virtuale".
 
+![Il frame del pod incapsulato in UDP Geneve che viaggia sull'underlay fisico](/diagrams/20-overlay-underlay.svg)
+
 ## Underlay — la rete fisica
 
 L'**underlay** è la rete reale che collega i nodi: switch, cavi, NIC, la subnet vSphere. È ciò che esiste indipendentemente da Kubernetes. In OpenShift corrisponde alla **machine network**.

@@ -5,6 +5,8 @@ description: Combinare l'isolamento di rete delle UDN con le NetworkPolicy per u
 
 UDN e NetworkPolicy risolvono problemi diversi e si combinano bene: la **UDN** dà il confine **fra tenant** (segmento isolato di default), le **NetworkPolicy** danno la micro-segmentazione **dentro** il tenant.
 
+![Due livelli: la UDN isola il tenant, le NetworkPolicy regolano i pod al suo interno](/diagrams/30-udn-microseg.svg)
+
 ## Due livelli di isolamento
 
 1. **Confine di tenant (UDN)**: una [UDN primaria](/udn/introduzione/) mette i pod del namespace in un segmento OVN isolato. Il traffico verso altri segmenti non è raggiungibile per costruzione, senza bisogno di policy.

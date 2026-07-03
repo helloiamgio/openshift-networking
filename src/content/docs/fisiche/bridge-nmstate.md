@@ -5,6 +5,8 @@ description: Configurare bridge e VLAN sulle NIC dei nodi in modo dichiarativo c
 
 Per portare una VLAN fisica dentro il cluster (per [localnet](/fisiche/localnet/), Multus bridge o VM su bridge) serve configurare bridge e sotto-interfacce **sulle NIC dei nodi**. Farlo a mano non è ripetibile: OpenShift usa l'**NMState Operator** e le **NodeNetworkConfigurationPolicy (NNCP)**, dichiarative e versionabili.
 
+![NNCP stato desiderato, NMState Operator applica ai nodi, NNS/NNCE come esito](/diagrams/26-nmstate.svg)
+
 ## I tre oggetti
 
 - **NodeNetworkState (NNS)**: sola lettura, mostra lo stato di rete attuale di ogni nodo.

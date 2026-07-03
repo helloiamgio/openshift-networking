@@ -5,6 +5,8 @@ description: Differenza fra UserDefinedNetwork (namespace) e ClusterUserDefinedN
 
 Le due CRD coprono due scope diversi.
 
+![UDN copre un namespace, CUDN seleziona più namespace via namespaceSelector](/diagrams/25-udn-vs-cudn.svg)
+
 ## UserDefinedNetwork (namespace)
 
 Vive in **un namespace** e isola quel namespace. Una rete = un tenant.

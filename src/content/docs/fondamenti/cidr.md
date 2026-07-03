@@ -5,6 +5,8 @@ description: Come scegliere il CIDR di una rete aggiuntiva o di una UDN senza co
 
 Sia Multus sia le UDN richiedono di scegliere una subnet. La regola è una sola: **non deve sovrapporsi a niente di già occupato nel cluster** (e a nessuna rete fisica raggiungibile).
 
+![Range occupati e riservati OVN da evitare, con un blocco libero scelto per la UDN](/diagrams/22-cidr-planning.svg)
+
 ## I range da evitare
 
 | Categoria | Valore | Note |

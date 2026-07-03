@@ -5,6 +5,8 @@ description: Multus o UDN? Tabella comparativa e albero decisionale per sceglier
 
 La confusione fra Multus e UDN si risolve con una domanda sola: **vuoi una NIC in più, o vuoi sostituire la rete primaria?**
 
+![UDN primaria sostituisce eth0 con la rete isolata; Multus tiene eth0 e aggiunge net1](/diagrams/31-multus-vs-udn.svg)
+
 ## Tabella comparativa
 
 | | Multus (rete secondaria) | UDN primaria |

@@ -12,6 +12,8 @@ Sì, è possibile dedicare a certi nodi/MachineSet una **VLAN diversa** da quell
 Qui parliamo del primo: segregare i **nodi**.
 :::
 
+![MachineSet multi-NIC: NIC primaria sulla VLAN cluster e NIC aggiuntiva su VLAN dedicata](/diagrams/27-machineset-vlan.svg)
+
 ## NIC primaria vs NIC aggiuntiva
 
 Nel `MachineSet` vSphere l'interfaccia è definita da `providerSpec.value.network.devices[].networkName`, che punta a un **port group vSphere** (cioè una VLAN).

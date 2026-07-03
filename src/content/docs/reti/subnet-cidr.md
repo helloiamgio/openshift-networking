@@ -5,6 +5,8 @@ description: Come leggere una subnet in notazione CIDR, quanti host contiene, e 
 
 La notazione **CIDR** (`10.0.0.0/24`) descrive un blocco di indirizzi IP. Il numero dopo lo slash è il **prefisso**: quanti bit iniziali sono fissi (la parte "rete"). I bit restanti identificano gli host.
 
+![I 32 bit di un IPv4 divisi in parte rete e parte host, con esempi di dimensioni](/diagrams/19-subnet-cidr.svg)
+
 ## Come si legge
 
 Un indirizzo IPv4 ha 32 bit. Il prefisso divide rete e host:

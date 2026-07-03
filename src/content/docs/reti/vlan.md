@@ -5,6 +5,8 @@ description: Cosa sono le VLAN (802.1Q), access vs trunk, e perché una VLAN non
 
 Una **VLAN** (Virtual LAN) divide uno switch fisico in più segmenti L2 logici e isolati. Due VLAN sullo stesso switch sono domini di broadcast separati: per passare dall'una all'altra serve un router (L3).
 
+![VLAN separate sullo stesso switch, porte access e trunk 802.1Q](/diagrams/18-vlan-trunk.svg)
+
 ## 802.1Q e tagging
 
 Il tag VLAN (standard **802.1Q**) è un'etichetta numerica (VLAN ID, 1–4094) inserita nel frame Ethernet. Lo switch usa il tag per tenere separato il traffico delle diverse VLAN sullo stesso cavo.

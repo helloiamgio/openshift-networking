@@ -15,6 +15,8 @@ OpenShift 4 usa **OVN-Kubernetes** come CNI di default: è il componente che ass
 
 ## Le due domande che ricorrono
 
+![Le due domande: una NIC in più → Multus, un namespace isolato → UDN](/diagrams/32-intro-scelta.svg)
+
 1. **"Voglio una NIC in più nel pod"** — es. collegare un pod a una VLAN fisica esistente (storage, backup, app legacy), mantenendo la rete pod di default. → È il territorio di **[Multus](/multus/introduzione/)**.
 
 2. **"Voglio un namespace isolato, con una sua subnet, come un cluster nel cluster"** — segregazione vera della rete *primaria* del namespace. → È il territorio delle **[UDN](/udn/introduzione/)**, GA dal 4.18.

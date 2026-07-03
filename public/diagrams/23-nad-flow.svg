@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="La NetworkAttachmentDefinition descrive una rete secondaria; il pod la richiede con un'annotation e ottiene l'interfaccia net1">
+<style>.bg{fill:#fff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-size:12px}@media(prefers-color-scheme:dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}</style>
+<defs><marker id="n1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round"/></marker></defs>
+<rect class="bg" x="1" y="1" width="678" height="258" rx="12"/>
+<rect x="40" y="90" width="180" height="80" rx="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.6"/><text class="t" x="130" y="120" text-anchor="middle" fill="#633806">NAD</text><text class="ts" x="130" y="140" text-anchor="middle" fill="#854F0B">descrive la rete</text><text class="ts" x="130" y="156" text-anchor="middle" fill="#854F0B">(macvlan/bridge…)</text>
+<rect x="290" y="90" width="180" height="80" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.6"/><text class="t" x="380" y="116" text-anchor="middle" fill="#2C2C2A">pod</text><text class="ts" x="380" y="136" text-anchor="middle" fill="#5F5E5A">annotation:</text><text class="ts" x="380" y="152" text-anchor="middle" fill="#5F5E5A">…/networks: nad</text>
+<rect x="540" y="52" width="110" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text class="t" x="595" y="74" text-anchor="middle" fill="#0C447C">eth0</text><text class="ts" x="595" y="91" text-anchor="middle" fill="#185FA5">default</text>
+<rect x="540" y="150" width="110" height="52" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/><text class="t" x="595" y="172" text-anchor="middle" fill="#633806">net1</text><text class="ts" x="595" y="189" text-anchor="middle" fill="#854F0B">dalla NAD</text>
+<line x1="220" y1="130" x2="288" y2="130" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#n1)"/><text class="ts" x="254" y="122" text-anchor="middle">referenzia</text>
+<line x1="470" y1="118" x2="538" y2="82" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#n1)"/><line x1="470" y1="142" x2="538" y2="176" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#n1)"/>
+<text class="ts" x="340" y="234" text-anchor="middle">La NAD è namespaced · il pod opta con l'annotation · la primaria eth0 non cambia</text>
+</svg>

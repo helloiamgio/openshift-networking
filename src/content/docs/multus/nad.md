@@ -5,6 +5,8 @@ description: La CRD NetworkAttachmentDefinition (NAD) e come un pod richiede l'a
 
 La **NetworkAttachmentDefinition** (NAD) è la CRD `k8s.cni.cncf.io/v1` che descrive una rete secondaria. È **namespaced**: vive in un namespace e di norma i pod dello stesso namespace la usano.
 
+![La NAD descrive la rete, il pod la richiede con un'annotation e ottiene net1](/diagrams/23-nad-flow.svg)
+
 ## NAD macvlan + whereabouts
 
 Esempio: interfaccia secondaria su una NIC fisica (`ens192`), con IPAM gestito da Whereabouts (IPAM cluster-wide, evita conflitti).

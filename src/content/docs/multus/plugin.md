@@ -5,6 +5,8 @@ description: I principali plugin CNI usabili come rete secondaria Multus — bri
 
 La rete secondaria può usare CNI diverse a seconda dell'obiettivo. Ecco le più comuni in OpenShift.
 
+![Plugin bridge, macvlan, ipvlan e SR-IOV a confronto](/diagrams/24-multus-plugins.svg)
+
 ## Plugin principali
 
 | Plugin | Cosa fa | Quando |

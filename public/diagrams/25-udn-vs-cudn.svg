@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="UserDefinedNetwork copre un solo namespace; ClusterUserDefinedNetwork seleziona piu' namespace via namespaceSelector condividendo la stessa rete isolata">
+<style>.bg{fill:#fff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:13px}.ts{fill:#555a66;font-size:11px}@media(prefers-color-scheme:dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}</style>
+<defs><marker id="c1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round"/></marker></defs>
+<rect class="bg" x="1" y="1" width="678" height="278" rx="12"/>
+<text class="t" x="175" y="32" text-anchor="middle" font-size="14">UserDefinedNetwork</text>
+<rect x="60" y="80" width="230" height="90" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8" stroke-dasharray="6 4"/><text class="t" x="175" y="112" text-anchor="middle" fill="#085041">ns: tenant-x</text><text class="ts" x="175" y="132" text-anchor="middle" fill="#0F6E56">una rete = un namespace</text>
+<text class="ts" x="175" y="200" text-anchor="middle">namespaced</text>
+<text class="t" x="505" y="32" text-anchor="middle" font-size="14">ClusterUserDefinedNetwork</text>
+<rect x="380" y="60" width="250" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.6"/><text class="ts" x="505" y="80" text-anchor="middle" fill="#3C3489">CUDN — namespaceSelector</text><text class="ts" x="505" y="95" text-anchor="middle" fill="#534AB7">matchLabels: {cudn: prod}</text>
+<rect x="380" y="140" width="115" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="437" y="166" text-anchor="middle" fill="#085041">ns app-1</text><text class="ts" x="437" y="182" text-anchor="middle" fill="#0F6E56">cudn: prod</text>
+<rect x="515" y="140" width="115" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="572" y="166" text-anchor="middle" fill="#085041">ns app-2</text><text class="ts" x="572" y="182" text-anchor="middle" fill="#0F6E56">cudn: prod</text>
+<line x1="460" y1="104" x2="440" y2="138" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#c1)"/><line x1="550" y1="104" x2="570" y2="138" stroke="#8a8f99" stroke-width="1.2" marker-end="url(#c1)"/>
+<text class="ts" x="505" y="228" text-anchor="middle">più namespace, stessa rete isolata</text>
+</svg>

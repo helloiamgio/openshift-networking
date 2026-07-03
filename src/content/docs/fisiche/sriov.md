@@ -5,6 +5,8 @@ description: Interfacce ad alte prestazioni con SR-IOV, Virtual Function e l'ope
 
 **SR-IOV** (Single Root I/O Virtualization) permette a una NIC fisica di esporre più **Virtual Function (VF)**, ognuna assegnabile direttamente a un pod o una VM. Il traffico bypassa lo stack software del kernel host, avvicinandosi al **line-rate** con latenza bassissima: è la scelta per telco, CNF, NFV e workload data-plane intensivi.
 
+![Una NIC PF espone più VF, ognuna assegnata direttamente a un pod](/diagrams/28-sriov.svg)
+
 ## Componenti
 
 - **SR-IOV Network Operator**: gestisce la configurazione su nodi compatibili.

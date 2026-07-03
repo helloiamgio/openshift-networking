@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Pianificazione CIDR: i range gia' occupati (pod, service, machine) e quelli riservati OVN da evitare, piu' un blocco libero scelto per la UDN">
+<style>.bg{fill:#fff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:13px}.ts{fill:#555a66;font-size:11px}@media(prefers-color-scheme:dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}</style>
+<rect class="bg" x="1" y="1" width="678" height="298" rx="12"/>
+<text class="t" x="40" y="32" font-size="14">Scegli un CIDR che non collide con nulla di occupato</text>
+<rect x="40" y="52" width="300" height="34" rx="7" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text class="ts" x="52" y="74" fill="#0C447C">pod network — 10.128.0.0/14</text>
+<rect x="40" y="94" width="300" height="34" rx="7" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text class="ts" x="52" y="116" fill="#0C447C">service — 172.30.0.0/16</text>
+<rect x="40" y="136" width="300" height="34" rx="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/><text class="ts" x="52" y="158" fill="#2C2C2A">machine — 10.0.0.0/16</text>
+<rect x="360" y="52" width="280" height="34" rx="7" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text class="ts" x="372" y="74" fill="#712B13">OVN join — 100.64.0.0/16 (riservato)</text>
+<rect x="360" y="94" width="280" height="34" rx="7" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text class="ts" x="372" y="116" fill="#712B13">OVN transit — 100.88.0.0/16 (riservato)</text>
+<rect x="360" y="136" width="280" height="34" rx="7" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/><text class="ts" x="372" y="158" fill="#712B13">OVN masquerade — 169.254.0.0/17</text>
+<rect x="40" y="196" width="600" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.6"/><text class="t" x="340" y="220" text-anchor="middle" fill="#085041">UDN → blocco libero, es. 10.200.0.0/16</text><text class="ts" x="340" y="238" text-anchor="middle" fill="#0F6E56">può sovrapporsi ad ALTRE UDN (VRF isolati), mai ai range sopra</text>
+<text class="ts" x="40" y="278">Occupati/riservati = da evitare · verde = scelta valida</text>
+</svg>

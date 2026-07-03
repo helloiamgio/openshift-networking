@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Un MachineSet con due network devices crea nodi con la NIC primaria sulla VLAN del cluster e una NIC aggiuntiva su una VLAN dedicata">
+<style>.bg{fill:#fff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:13px}.ts{fill:#555a66;font-size:11px}@media(prefers-color-scheme:dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}</style>
+<defs><marker id="m1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#8a8f99" stroke-width="1.4" stroke-linecap="round"/></marker></defs>
+<rect class="bg" x="1" y="1" width="678" height="278" rx="12"/>
+<text class="t" x="40" y="34" font-size="14">MachineSet multi-NIC: una VLAN dedicata a certi nodi</text>
+<rect x="30" y="100" width="180" height="90" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.6"/><text class="t" x="120" y="132" text-anchor="middle" fill="#3C3489">MachineSet</text><text class="ts" x="120" y="152" text-anchor="middle" fill="#534AB7">network.devices:</text><text class="ts" x="120" y="168" text-anchor="middle" fill="#534AB7">networkName ×2</text>
+<rect x="270" y="100" width="150" height="90" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.6"/><text class="t" x="345" y="140" text-anchor="middle" fill="#2C2C2A">nodo worker-fw</text><text class="ts" x="345" y="160" text-anchor="middle" fill="#5F5E5A">NIC1 + NIC2</text>
+<rect x="480" y="56" width="170" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text class="t" x="565" y="78" text-anchor="middle" fill="#0C447C">VM Network (cluster)</text><text class="ts" x="565" y="95" text-anchor="middle" fill="#185FA5">primaria · API/DNS</text>
+<rect x="480" y="180" width="170" height="52" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/><text class="t" x="565" y="202" text-anchor="middle" fill="#633806">PG-VLAN-200</text><text class="ts" x="565" y="219" text-anchor="middle" fill="#854F0B">VLAN dedicata</text>
+<line x1="210" y1="145" x2="268" y2="145" stroke="#8a8f99" stroke-width="1.4" marker-end="url(#m1)"/>
+<line x1="420" y1="130" x2="478" y2="86" stroke="#185FA5" stroke-width="1.2" marker-end="url(#m1)"/>
+<line x1="420" y1="160" x2="478" y2="204" stroke="#854F0B" stroke-width="1.2" marker-end="url(#m1)"/>
+<text class="ts" x="340" y="262" text-anchor="middle">La primaria resta instradabile al control plane · vale per le macchine nuove (rolling)</text>
+</svg>

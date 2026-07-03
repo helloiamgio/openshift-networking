@@ -79,6 +79,7 @@ export default defineConfig({
             { label: 'localnet: pod/VM su VLAN', slug: 'fisiche/localnet' },
             { label: 'Bridge e NMState', slug: 'fisiche/bridge-nmstate' },
             { label: 'Nodi/MachineSet su VLAN', slug: 'fisiche/nodi-vlan-machineset' },
+            { label: 'DHCP e IP dei nodi', slug: 'fisiche/dhcp-nodi' },
             { label: 'SR-IOV', slug: 'fisiche/sriov' },
           ],
         },

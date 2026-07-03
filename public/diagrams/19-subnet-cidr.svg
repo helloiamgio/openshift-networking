@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Notazione CIDR: i 32 bit di un IPv4 divisi in parte rete (prefisso) e parte host, con esempi di dimensioni">
+<style>.bg{fill:#fff;stroke:#e5e7eb}.t{fill:#1f2430;font-weight:600;font-size:14px}.ts{fill:#555a66;font-size:12px}@media(prefers-color-scheme:dark){.bg{fill:#1b2030;stroke:#33384a}.t{fill:#e8eaf0}.ts{fill:#a7adbd}}</style>
+<rect class="bg" x="1" y="1" width="678" height="298" rx="12"/>
+<text class="t" x="40" y="34">CIDR: 32 bit divisi in "rete" (prefisso) e "host"</text>
+<rect x="60" y="60" width="410" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/><text class="t" x="265" y="89" text-anchor="middle" fill="#0C447C">rete — prefisso /24 (24 bit fissi)</text>
+<rect x="470" y="60" width="150" height="48" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/><text class="t" x="545" y="89" text-anchor="middle" fill="#633806">host (8 bit)</text>
+<text class="ts" x="60" y="132">Esempio: 10.0.5.0/24 → 256 indirizzi, 254 host utili (−2: rete e broadcast)</text>
+<text class="t" x="40" y="176">Il prefisso più grande = blocco più piccolo</text>
+<rect x="60" y="192" width="120" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="120" y="210" text-anchor="middle" fill="#085041">/24</text><text class="ts" x="120" y="226" text-anchor="middle" fill="#0F6E56">254 host</text>
+<rect x="200" y="192" width="120" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="260" y="210" text-anchor="middle" fill="#085041">/23</text><text class="ts" x="260" y="226" text-anchor="middle" fill="#0F6E56">510 host</text>
+<rect x="340" y="192" width="120" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="400" y="210" text-anchor="middle" fill="#085041">/16</text><text class="ts" x="400" y="226" text-anchor="middle" fill="#0F6E56">65.534 host</text>
+<rect x="480" y="192" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text class="ts" x="550" y="210" text-anchor="middle" fill="#085041">/8</text><text class="ts" x="550" y="226" text-anchor="middle" fill="#0F6E56">16,7M</text>
+<text class="ts" x="40" y="270">Privati (RFC 1918): 10.0.0.0/8 · 172.16.0.0/12 · 192.168.0.0/16</text>
+</svg>
